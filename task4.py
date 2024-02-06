@@ -53,9 +53,10 @@ def build_heap_tree(heap_array: list, i = 0) -> Node | None:
     return n
 
 
-heap_array = [1, 3, 5, 7, 9, 2, 4, 34, 2, 1, 2]
-heapq.heapify(heap_array)
+if __name__ == "__main__":
+    heap_array = [1, 3, 5, 7, 9, 2, 4, 34, 2, 1, 2]
+    heapq.heapify(heap_array)
 
-print(heap_array)
+    print(heap_array)
 
-draw_tree(build_heap_tree(heap_array))
+    draw_tree(build_heap_tree(heap_array))

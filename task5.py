@@ -112,13 +112,14 @@ def color_tree_with_dfs_visualization(graph: Node):
         stack.extend([vertex.right, vertex.left])
 
 
-heap_array = [1, 3, 5, 7, 9, 2, 4, 34, 2, 1, 2]
-heapq.heapify(heap_array)
+if __name__ == "__main__":
+    heap_array = [1, 3, 5, 7, 9, 2, 4, 34, 2, 1, 2]
+    heapq.heapify(heap_array)
 
-tree = build_heap_tree(heap_array)
+    tree = build_heap_tree(heap_array)
 
-color_tree_with_bfs_visualization(tree)
-# color_tree_with_dfs_visualization(tree)
+    color_tree_with_bfs_visualization(tree)
+    # color_tree_with_dfs_visualization(tree)
 
-draw_tree(tree)
+    draw_tree(tree)
 
